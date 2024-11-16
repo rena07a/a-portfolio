@@ -1,0 +1,333 @@
+@media screen and (max-width: 1199px) {
+    /*MV*/
+    h1,h2{
+        font-size: 56px;
+    }
+}
+
+@media screen and (max-width: 959px) {
+    /*hamburger menu*/
+    .header-navi{
+        display: none;
+    }
+    .navi-contact{
+        border-left: 0px;
+        padding-left: 0px;
+    }
+
+    .hamburger-menu{
+        display: block;
+    }
+    .menu-btn {
+        position: fixed;
+        top: 5px;
+        right: 20px;
+        display: flex;
+        height: 60px;
+        width: 60px;
+        justify-content: center;
+        align-items: center;
+        z-index: 1001;
+    }
+    .menu-btn span,
+    .menu-btn span:before,
+    .menu-btn span:after {
+        content: '';
+        display: block;
+        height: 1px;
+        width: 22px;
+        border-radius: 2px;
+        background-color: #000;
+        position: absolute;
+    }
+    .menu-btn span:before {
+        bottom: 6px;
+    }
+    .menu-btn span:after {
+        top: 6px;
+    }
+
+    #menu-btn-check:checked ~ .menu-btn span {
+        background-color: rgba(255, 255, 255, 0);
+    }
+    #menu-btn-check:checked ~ .menu-btn span::before {
+        bottom: 0;
+        transform: rotate(45deg);
+    }
+    #menu-btn-check:checked ~ .menu-btn span::after {
+        top: 0;
+        transform: rotate(-45deg);
+    }
+    #menu-btn-check {
+        display: none;
+    }
+
+    .menu-content {
+        width: 100%;
+        height: 100%;
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 80;
+        background-color: #f9f9f9;
+    }
+    .menu-content ul {
+        padding: 90px 10% 0;
+    }
+    
+    .menu-content ul li a {
+        display: block;
+        width: 100%;
+        font-size: 16px;
+        box-sizing: border-box;
+        color:#000;
+        padding: 10px 15px 12px 0;
+        position: relative;
+    }
+    
+    .menu-content {
+        width: 100%;
+        height: 100%;
+        position: fixed;
+        top: 0;
+        left: 100%;
+        z-index: 80;
+        background-color: #f9f9f9;
+        transition: all 0.5s;
+    }
+    #menu-btn-check:checked ~ .menu-content {
+        left: 0;
+    }
+
+    .menu-content a:hover {
+        color: #959595;/* ホバー時の文字色 */
+    } 
+
+    
+    
+    /*MV*/
+    h1,h2{
+        font-size: 48px;
+    }
+    
+    .mv-contents{
+        margin: 377px 0px 0px 0px;
+        height: 650px;
+    }
+    .mv-picture {
+        width: 78%;
+    }
+    .mv-text h1 {
+        margin-top: 0px;
+    }
+    .mv-scrolldown {
+        right: 60%;
+    }
+
+    /*About*/
+    .about{
+        margin: 0 0 160px 0;
+    }
+    .about-title1{
+        height: 59px;
+    }
+
+
+    /********** about.html **********/
+    /***** About me *****/
+    .aboutme-contents{
+        display: block;
+        justify-items: center;
+        text-align: center;
+    }
+    .aboutme-pic {
+        width: 350px;
+    }
+    .aboutme-pic img{
+        width: 350px;
+        height: auto;
+    }
+
+    .aboutme-textarea{
+        margin-left: 0;
+        width: 80%;
+    }
+    .copy{
+        margin-top: 50px;
+    }
+
+    /***** my strengths *****/
+    .mystrengths{
+        display: block;
+    }
+    .mystrengths-title0102{
+        width: 100%;
+        text-align: left;
+        margin: 0 0 26px 0;
+    }
+    .mystrengths-text{
+        width: 100%;
+        line-height:2em;
+        letter-spacing: 3%;
+    }
+
+    /********** work01.html **********/
+    
+    .work01-04-title h2{
+        font-size: 24px;
+    }
+    
+    .work01-04-text0102{
+        display: block;
+        margin-bottom: 0px;
+    }
+    .work01-04-text01{
+        width: 100%;
+        margin-bottom: 60px;
+    }
+    .work01-04-text02{
+        width: 100%;
+        margin-bottom: 60px;
+    }
+
+    .work01-04-text030405{
+        display: block;
+        margin-bottom: 0px;
+    }
+    .work01-04-text0304{
+        width: 100%;
+        margin-bottom: 60px;
+    }
+    .work01-04-text05{
+        width: 100%;
+    }
+    
+
+    /********** work02.html **********/
+    .work01-04-site-detail{
+        padding: 9% 5% ;
+    }
+   
+
+}
+    
+@media screen and (max-width: 768px){
+   /*Work*/
+    .work-contents{
+        display: block;
+    }
+    .works{
+        width: 100%;
+    }
+    /*About*/
+    .about-contents{
+        display: block;
+        padding: 65px 10% 85px 10%;
+        width: 100%;
+        height: auto;
+        justify-items: center;
+        text-align: center;
+    }
+    .about-icon{
+        width: 85%;
+    }
+    .profile-textarea{
+        margin-left: 0px;
+    }
+    .copy{
+        margin-top: 50px;
+    }
+}
+
+
+@media screen and (max-width: 480px) {
+    /*header*/
+    header{
+        height: 60px;
+    }
+    
+    .logo{
+        font-size: 20px;
+    }
+
+    .menu-btn{
+        top:0px;
+    }
+   
+    /*MV*/
+    h1,h2{
+        font-size: 32px;
+    }
+    .mv-text-title-sp{
+        display: block;
+    }
+    .mv-text-title{
+        display: none;
+    }
+    .mv-text p{
+        font-size: 13px;
+    }
+
+    .mv-contents{
+        margin: 231px 0px 0px 0px;
+        height: 446px;
+    }
+
+    /*About*/
+    .about-title1{
+        height: 39px;
+    }
+
+    /********** about.html **********/
+    /***** About me *****/
+    .aboutme-title{
+        margin:231px 0 87px 0 ;
+    }
+    .aboutme-title p{
+        margin-top: 3px;
+    }
+
+    .aboutme-textarea{
+        width: 100%;
+    }
+    .aboutme-pic{
+        width: 100%;
+    }
+    .aboutme-pic img{
+        width: 100%;
+        aspect-ratio: 1 / 1;
+        object-fit: cover;
+    }
+
+
+    /********** work01.html **********/
+    .work-page{
+        padding:  0 5%;
+    }
+
+    .work01-04-textarea h3 {
+        margin: 0 0 30px 0;
+    }
+    .work01-04-textarea h4{
+        margin: 0 15px 12px 15px;
+    }
+    .work01-04-textarea ul{
+        margin: 0 15px 25px 15px;
+    }
+
+    .work-page-pic{
+        padding: 150px 5% 60px 5%;
+    }
+
+
+    footer{
+        padding: 60px 5% 0 5%;
+    }
+
+    /********** work01.html **********/
+    .work04-site-area img{
+        padding: 0 5% 9% 5%;
+    }
+}
+    
+    

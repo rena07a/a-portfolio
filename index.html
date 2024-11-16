@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ASANO's portfolio</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/destyle.css@1.0.15/destyle.css"/>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/responsive.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&display=swap"rel="stylesheet"/>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  </head>
+
+  <body>
+    <!--..........header..........-->
+    <header>
+      <div class="header">
+        <div class="logo">
+          <a href="#">ASANO's portfolio</a>
+        </div>
+        <nav class="header-navi">
+          <ul>
+            <li class="navi-work"><a href="#Work">Work</a></li>
+            <li class="navi-about"><a href="about.html">About</a></li>
+            <li class="navi-contact"><a href="mailto:rena07seven@icloud.com?subject=お問い合わせ" >Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+
+    <!---------- hamburger menu ---------->
+    <div class="hamburger-menu">
+      <input type="checkbox" id="menu-btn-check">
+      <label for="menu-btn-check" class="menu-btn"><span></span></label>
+      <!--ここからメニュー-->
+      <div class="menu-content" id="menu-content">
+        <ul>
+          <li class="navi-work"><a href="#Work">Work</a></li>
+          <li class="navi-about"><a href="about.html">About</a></li>
+          <li class="navi-contact"><a href="mailto:rena07seven@icloud.com?subject=お問い合わせ" >Contact</a></li>
+        </ul>
+      </div>
+      <!--ここまでメニュー-->
+    </div>
+
+  <script>
+    $('#menu-content a[href]').on('click', function(event) {
+    // メニューを閉じる
+    $('#menu-btn-check').prop('checked', false);
+    });
+  </script>
+
+    <!--..........MV..........-->
+    <section class="mv">
+      <div class="mv-contents">
+        <div class="mv-text">
+          <h1 class="mv-text-title">Welcome to ASANO's <br />portfolio website</h1>
+
+          <!--spの改行表示-->
+          <h1 class="mv-text-title-sp">Welcome to <br>ASANO's <br />portfolio website</h1>
+
+          <p>I am looking to become a web designer.</p>
+        </div>
+        <div class="mv-picture">
+           <img src="img/mv-pic.jpg"  alt="main visual画像" width="720" height="476"/>
+        </div>
+        <img src="img/Scrolldown.png"  class="mv-scrolldown" alt="Scroll down" width="18" height="124"/>
+      </div>
+    </section>
+      
+    
+
+    <!--..........Work..........-->
+   <section class="work" id="Work">
+    <div class="work-title">
+      <h2>Work</h2>
+      <p>制作物</p>
+    </div>
+    <div class="work-contents">
+      <div class="works">
+        <a href="work01.html" >
+         <img src="img/Momentiq.jpg" alt="Momentiq ウエディングフォトサイト画像" width="460" height="258">
+         <h3>ウエディングフォトサイト「Momentiq」</h3>
+         <p>Website　｜　自主制作</p>
+        </a>
+      </div>
+      <div class="works">
+        <a href="work02.html">
+         <img src="img/itayauta Portfolio.jpg" alt="板谷 うた様 ポートフォリオサイト画像" width="460" height="258">
+         <h3>板谷 うた様 ポートフォリオサイト</h3>
+         <p>Website　｜　クライアントワーク</p>
+        </a>
+      </div>
+      <div class="works">
+        <a href="work03.html">
+         <img src="img/asano_portfolio.jpg" alt="浅野 玲奈 ポートフォリオサイト画像" width="460" height="258">
+         <h3>浅野 玲奈 ポートフォリオサイト</h3>
+         <p>Website　｜　自主制作</p>
+        </a>
+      </div>
+      <div class="works">
+        <a href="work04.html">
+         <img src="img/boxing-gym-banner.png" alt="板谷 うた様 ポートフォリオサイト画像" width="460" height="258">
+         <h3>ボクシングジムバナー</h3>
+         <p>Banner　｜　自主制作</p>
+        </a>
+      </div>
+    </div>
+   </section>
+    
+      
+
+    <!--..........About..........-->
+    <section class="about" id="About">
+      <div class="about-title1" >
+        <h2>About</h2>
+      </div>
+      <div class="about-title2">
+        <p>私について</p>
+      </div>
+
+      <div class="about-contents">
+        <div class="about-icon">
+          <img src="img/profile.jpg" alt="プロフィール画像" width="400" height="400">
+        </div>
+        <div class="profile-textarea">
+          <div class="name-area">
+            <p class="copy">Aspiring web designer</p>
+            <p class="name">浅野 玲奈</p>
+          </div>
+          <div class="text-area">
+            <p>1999年 愛知県名古屋市生まれ。<br>
+              WEBデザイナーを志し、顧客目線で期待を超えるデザインを提供するために日々勉強中。</p>
+          </div>
+          <a href="about.html" class="link-btn" >View details</a>
+          
+        </div>
+      </div>
+
+    </section>
+    
+      
+        
+    
+    <!--..........footer..........-->
+    <footer>
+        <div class="footer logo">
+          <a href="#">ASANO's portfolio</a>
+        </div>
+        <nav class="footer-navi">
+          <ul>
+            <li><a href= "index.html#Work">Work</a></li>
+            <li><a href="about.html">About</a></li>
+            <li class="line"></li>
+            <li><a href="mailto:rena07seven@icloud.com?subject=お問い合わせ&body=お問い合わせ内容をご記入ください">Contact</a></li>
+          </ul>
+        </nav>
+        <p class="copyright">© 2024 Rena Asano.</p>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>about/私について</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/destyle.css@1.0.15/destyle.css"/>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/responsive.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&display=swap"
+      rel="stylesheet"/>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  </head>
+
+  <body>
+    <!--..........header..........-->
+    <header>
+      <div class="header">
+        <div class="logo">
+          <a href="index.html">ASANO's portfolio</a>
+        </div>
+        <div class="header-navi">
+          <ul>
+            <li class="navi-work"><a href="index.html#Work">Work</a></li>
+            <li class="navi-about"><a href="about.html">About</a></li>
+            <li class="navi-contact"><a href="mailto:rena07seven@icloud.com?subject=お問い合わせ&body=お問い合わせ内容をご記入ください" >Contact</a></li>
+          </ul>
+        </div>
+      </div>
+    </header>
+    <!---------- hamburger menu ---------->
+    <div class="hamburger-menu">
+      <input type="checkbox" id="menu-btn-check">
+      <label for="menu-btn-check" class="menu-btn"><span></span></label>
+      <!--ここからメニュー-->
+      <div class="menu-content" id="menu-content">
+        <ul>
+          <li class="navi-work"><a href="index.html#Work">Work</a></li>
+          <li class="navi-about"><a href="about.html">About</a></li>
+          <li class="navi-contact"><a href="mailto:rena07seven@icloud.com?subject=お問い合わせ" >Contact</a></li>
+        </ul>
+      </div>
+      <!--ここまでメニュー-->
+    </div>
+
+  <script>
+    $('#menu-content a[href]').on('click', function(event) {
+    // メニューを閉じる
+    $('#menu-btn-check').prop('checked', false);
+    });
+  </script>
+
+
+    <!--..........About..........-->
+    <section class="about-page">
+       <!--..........About me..........-->
+       <div class="aboutme-title">
+        <h2>About me</h2>
+        <p>私について</p>
+       </div>
+
+       <div class="aboutme-contents">
+         <div class="aboutme-pic">
+          <img src="img/profile2.jpg" alt="プロフィール画層" width="416" height="550">
+         </div>
+         
+         <div class="aboutme-textarea">
+           <p class="copy">Aspiring web designer</p>
+           <p class="name">浅野 玲奈</p>
+           <p class="aboutme-text">大学卒業後、コロナ禍の影響で安定した業界を求め、営業アシスタントとして建設系専門商社へ就職。しかし、心の中では常にWEB関連の仕事への思いが消えませんでした。
+             その後の転職を機に、ECサイトの管理や自社コーポレートサイト、新規メディアの運用に携わる機会を得て、実際にWEBの世界に触れることができました。この経験を通じて、運用だけでなく、ものを作る側に回りたいという思いが強まり、WEBデザイナーになることを決意しました。
+             これまでのサイト制作を依頼する側だった経験を活かし、顧客目線のニーズや思いに応えるデザイナーを目指し、期待を超えるデザインを提供できるよう、日々努力していきたいと思っています。</p>
+         </div>
+       </div>
+      <!--..........My Strengths..........-->
+      <div class="mystrengths-title">
+        <h2>My Strengths</h2>
+        <p>私の強み</p>
+      </div>
+      <div class="mystrengths-contents">
+       <div class="mystrengths">
+         <h3 class="mystrengths-title0102"><span class="mystrengths-titleNo">01．</span>向上心と学習意欲</h3>
+         <p class="mystrengths-text">少数精鋭の会社に所属しているため、多岐にわたる業務を担当し、未経験分野の課題やタスクに直面することがありますが、常に前向きな姿勢で取り組んでいます。プロジェクトに関連する情報を前もって調査、短期間で精査し、得た情報を基にした提案が評価され、貢献できた経験があります。
+           これらの経験を通じて、常に学び続ける姿勢と、未知の分野に挑戦することを恐れない前向きな心構えを身につけました。</p>
+       </div>
+       <div class="mystrengths">
+         <h3 class="mystrengths-title0102"><span class="mystrengths-titleNo">02．</span>調整力</h3>
+         <p class="mystrengths-text">代表と社内外関係者との調整業務から、日常的に円滑なコミュニケーションを心掛け、相手の意図を正確に理解し、適切に伝えることに尽力しています。認識の食い違いが生じた際には、積極的に連絡を取り合い、状況を整理することで、全員の合意を得たスムーズなプロジェクトの進行に努めています。
+           今後もこの調整力を活かし、関係者との連携を強化しながら目標達成に貢献していきたいと考えています。</p>
+       </div>
+      </div>
+
+    </section>
+    
+      
+    
+    <!--..........footer..........-->
+    <footer>
+      <div class="footer">
+        <div class="footer logo">
+          <a href="index.html">ASANO's portfolio</a>
+        </div>
+        <div class="footer-navi">
+          <ul>
+            <li><a href= "index.html#Work">Work</a></li>
+            <li><a href="about.html">About</a></li>
+            <li class="line"></li>
+            <li><a href="mailto:rena07seven@icloud.com?subject=お問い合わせ&body=お問い合わせ内容をご記入ください">Contact</a></li>
+          </ul>
+        </div>
+        <p class="copyright">© 2024 Rena Asano.</p>
+      </div>
+    </footer>
+  </body>
+</html>

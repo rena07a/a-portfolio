@@ -1,0 +1,661 @@
+@charset "utf-8";
+
+body {
+  background-color: #f9f9f9;
+  height: 100%; /* 高さを100%に設定 */
+  box-sizing: border-box; /* ボックスモデルを調整 */
+}
+
+
+/* <uniquifier>: Use a unique and descriptive class name */
+/* <weight>: Use a value from 100 to 900 */
+body {
+  font-family: "Montserrat", "Noto Sans JP", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  letter-spacing: 0.03em; /* 文字間を2ピクセル広げる */
+}
+
+h1,h2{
+  font-size: 64px;
+  font-weight: 480;
+  line-height: 1.2em;
+}
+p,li{
+  font-size: 14px;
+  line-height: 1.5em;
+  font-weight: 350;
+}
+
+
+/********** index.html **********/
+/***** header *****/
+
+header {
+  padding: 0 10%;
+  position: fixed;
+  top: 0;
+  z-index: 1000; /* 他の要素の上に表示 */
+  width: 100%;
+  height: 70px;
+  background-color: #f9f9f9;
+  font-weight: 470;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between; /* 左右に要素を分ける */
+  height: 100%;
+  align-items: center;
+}
+
+.logo {
+  font-size: 24px;
+}
+
+.header-navi ul {
+  display: flex;
+  font-size: 20px;
+}
+.navi-work,
+.navi-about {
+  margin-right: 35px;
+}
+.navi-contact {
+  border-left: 1px solid;
+  padding-left: 35px;
+}
+
+.header-navi a{
+  transition: color 0.3s;
+}
+.header-navi a:hover {
+  opacity: 0.4;/* ホバー時の文字色 */
+} 
+
+.hamburger-menu{
+  display:none;
+}
+
+/***** MV *****/
+.mv{
+  padding-left:10%;
+}
+.mv-contents {
+  margin: 186px 0px 0px 0px;
+  position: relative; /* 相対位置を設定 */
+  height: 476px;
+}
+
+.mv-text {
+  position: absolute; /* 絶対位置を設定 */
+  left: 0; /* 左寄せ */
+  z-index: 1;
+}
+
+.mv-picture {
+  position: absolute; /* 絶対位置を設定 */
+  width: 55%;
+  right: 0; /* 右寄せ */
+  bottom: 0;
+  z-index: 0;
+  box-shadow: -20px 20px 0px 0px rgba(0,0,0,.1) ;
+}
+.mv-picture img{
+  width: 100%;
+  height: auto;
+}
+
+.mv-text h1 {
+  margin-top: 146px;
+}
+.mv-text p {
+  font-size: 16px;
+  margin-top: 16px;
+}
+
+.mv-scrolldown {
+  position: absolute;
+  bottom: -10%;
+  right: 40%;
+}
+.mv-text-title-sp{
+  display: none;
+}
+
+
+
+/***** work *****/
+
+.work{
+  padding:0 10%;
+  scroll-margin-top: 70px;
+}
+
+.work-title{
+  align-items: center; /* 高さ中央揃え */
+  text-align: center; /* テキストを中央揃え */
+  margin:160px 0 80px 0;
+}
+
+
+.work-contents{
+  display: flex;
+  flex-wrap: wrap; /* 折り返しを許可 */
+  justify-content: center; /* 水平方向に中央揃え */
+  margin-bottom: 90px;
+}
+
+.works{
+  width: 46%;
+  margin: 0 2% 50px 2%;
+}
+
+.works h3{
+  margin: 17px 0 5px 17px;
+}
+.works p{
+  margin: 0 0 25px 17px;
+  color: #858585;
+}
+
+.works img{
+  transition: transform 0.3s ;
+  width: 100%;
+  height: auto;
+}
+.works a:hover img {
+  transform: scale(1.04);
+}
+
+
+/***** About *****/
+.about{
+  margin: 0 10% 160px 10%;
+  scroll-margin-top: 70px;
+}
+
+.about-title1{
+  background: linear-gradient(180deg, #f9f9f9 0%, #f9f9f9 50%, #D7E6EA 50%, #D7E6EA 100%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 78px;
+}
+.about-title2{
+  background-color: #D7E6EA;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.about-contents{
+  background-color: #D7E6EA;
+  padding: 75px 8% 85px 8%;
+  display: flex;
+  align-items: center; /* 高さ中央揃え */
+  height: 100%; 
+  margin-bottom: 100px;
+}
+.about-icon{
+  width: 48%;
+}
+.about-icon img{
+  width: 100%;
+  height: auto;
+}
+
+.profile-textarea{
+  margin-left: 10%;
+}
+.copy{
+  font-size: 13px;
+  font-weight: 300;
+  margin-bottom: 10px;
+}
+.name{
+  font-size: 20px;
+  margin-bottom: 22px;
+  letter-spacing: 1.08em;
+}
+.text-area p{
+  margin-bottom: 40px;
+  line-height: 2;
+}
+
+.link-btn{
+  background-color: #f9f9f9;
+  padding: 12px 30px 12px 30px;
+  border-radius: 5px; /* 角を5px丸くする */
+  transition: background-color 0.3s, color 0.3s; /* アニメーション効果 */
+}
+.link-btn::after{
+  content: "";
+  display: inline-block;
+  margin-left: 1em;
+  vertical-align: 1px;
+  width: 6px;
+  height: 6px;
+  border-right: 1px solid #000;
+  border-bottom: 1px solid #000;
+  transform: rotate(-45deg);
+}
+
+.link-btn:hover {
+  background-color:#000; /* ホバー時の背景色 */
+  color: white; /* ホバー時の文字色 */
+}
+.link-btn:hover::after{
+  border-right-color: #fff;
+  border-bottom-color: #fff;
+}
+
+/***** footer *****/
+footer{
+  height: 250px;
+  padding: 60px 10% 0 10%;
+  font-weight: 470;
+}
+
+.footer-navi{
+ margin-top: 40px;
+}
+
+.footer-navi ul{
+ font-size: 20px;
+}
+
+.footer-navi li{
+  margin-bottom: 10px;
+}
+
+.line{
+  width: 20px;
+  border-top:1px solid #000;
+}
+
+.copyright{
+  text-align: center;
+  margin: 40px 0 20px 0;
+}
+
+.footer-navi a{
+  transition: color 0.3s;
+}
+.footer-navi a:hover {
+  color: #959595;/* ホバー時の文字色 */
+} 
+
+
+
+
+/********** about.html **********/
+/***** About me *****/
+.about-page{
+  padding: 0 10%;
+}
+
+.aboutme-title{
+  margin:360px 0 87px 0 ;
+}
+.aboutme-title p{
+  margin-top: 7px;
+}
+
+.aboutme-contents{
+  display: flex;
+  align-items: center; /* 高さ中央揃え */
+  
+}
+.aboutme-pic{
+  width: 37%;
+}
+.aboutme-pic img{
+  width: 100%;
+  height: auto;
+}
+
+
+.aboutme-textarea{
+  margin-left: 13%;
+  width: 50%;
+}
+.aboutme-text{
+  line-height:2em;
+  letter-spacing: 3%;
+}
+
+/***** my strengths *****/
+
+.mystrengths-title{
+  margin: 215px 0 87px 0;
+}
+
+.mystrengths{
+  display: flex;
+  margin-bottom: 76px;
+}
+
+.mystrengths-title0102{
+  width: 50%;
+  text-align: right;
+  margin-right: 75px;
+}
+
+.mystrengths-text{
+  width: 50%;
+  line-height:2em;
+  letter-spacing: 3%;
+}
+
+.mystrengths-titleNo{
+ color:#898989;
+}
+
+.mystrengths-contents{
+  margin-bottom: 215px;
+}
+
+/********** work01.html **********/
+.work-page{
+  padding: 0 10%;
+}
+
+.work01-04-title h2{
+  font-size: 32px;
+  margin:362px 0 18px 0;
+}
+.work01-04-title p{
+  color: #858585;
+  margin-bottom: 5px;
+}
+
+.work01-04-thumbnail img{
+  margin: 50px 0 26px 0;
+  width: 100%; /* 親要素の幅に合わせる */
+  height: auto; /* アスペクト比を維持 */
+}
+.work01-04-summary{
+  margin-bottom: 70px;
+}
+
+.work01-04-text0102{
+  display: flex;
+  margin-bottom: 60px;
+}
+.work01-04-text01{
+  width: 50%;
+}
+.work01-04-text02{
+  width: 50%;
+}
+
+.work01-04-textarea h3{
+  padding: 13px 15px;
+  margin: 0 10px 30px 10px;
+  background-color: #eeeeee;
+  font-weight: 600;
+}
+.work01-04-textarea h4{
+  margin: 0 25px 12px 25px;
+  font-size: 20px;
+  font-weight: 500;
+  color: #afafaf;
+}
+.work01-04-h4-sub{
+  margin-left: 11px;
+  font-size: 12px;
+  font-weight: 500;
+  color: #000;
+}
+
+.work01-04-textarea ul{
+  margin: 0 25px 25px 25px;
+}
+.work01-04-textarea li{
+  padding: 0 25px 0 20px;
+  position: relative;
+  align-items: center;
+
+}
+.work01-04-textarea li::before{
+  content: '';
+  position: absolute;
+  left: 10px;
+  top: 10px;
+  transform: translateY(-50%);
+  width: 3px;
+  height: 3px;
+  border-radius: 50%;
+  background-color: #000;
+}
+
+.work-line{
+  background-color: #d9d9d9;
+  height: 1px;
+  margin: 0 25px 25px 25px;
+}
+
+.square {
+  display: inline-block; /* インラインブロックにすることでテキストの後に配置 */
+  width: 15px; /* 四角の幅 */
+  height: 15px; /* 四角の高さ */
+  border: 1px solid black; /* 枠線のスタイル */
+  background-color: #f9f9f9;
+  margin: 0px 0  0 10px; /* テキストとの間隔 */
+}
+.color-2{
+  background-color: #8ac799;
+}
+.Zen-Old-Mincho{
+  font-family:Zen Old Mincho;
+}
+.Antic-Didone{
+  font-family: Antic Didone;
+}
+
+.work01-04-text030405{
+  display: flex;
+  margin-bottom: 60px;
+}
+.work01-04-text0304{
+  width: 50%;
+}
+.work01-04-text05{
+  width: 50%;
+}
+.work01-04-text03{
+  margin-bottom: 60px;
+}
+
+
+.work-page-pic{
+  background-color: #D7E6EA;
+  padding: 150px 10% 60px 10%;
+}
+
+
+.site-text-link{
+  margin: 60px 0 10px 0;
+  text-align: center;
+  text-decoration: underline;
+}
+.site-text-link a:hover{
+  opacity: 0.4;
+}
+
+.blank{
+  height: 150px;
+}
+
+.work01-04-site-area{
+  display: flex;
+}
+.work01-04-site-pc{
+  width: 78%;
+}
+.work01-04-site-pc img{
+  width: 96%;
+  height: auto;
+  margin: 0 2%;
+}
+
+.work01-04-site-sp{
+  width: 22%;
+}
+.work01-04-site-sp img{
+  width: 92%;
+  height: auto;
+  margin: 0 10%;
+}
+
+.work-page-pic{
+  background-color: #D7E6EA;
+}
+
+
+/* pagination */
+.center {
+  text-align: center;
+  margin-top: 150px;
+}
+
+.pagination {
+  display: inline-block;
+}
+
+.pagination a {
+  float: left;
+  padding: 8px 16px;
+  transition: background-color .3s;
+  margin: 0 4px;
+}
+
+.pagination a.active {
+  background-color: #000;
+  color: white;
+}
+
+.pagination a:hover:not(.active) {
+  background-color: #fff;
+}
+
+
+
+
+
+/********** work02.html **********/
+.color-3{
+  background-color: #FFFFFF;
+}
+.color-4{
+  background-color: #000;
+}
+.Noto-Sans-JP{
+  font-family: Noto-Sans-JP;
+  font-weight: 600;
+}
+.site-text-link{
+  margin-bottom: 10px;
+}
+.site-text-link-sub{
+  text-align: center;
+  font-size: 12px;
+  margin-bottom: 170px;
+}
+
+
+.work01-04-site-detail{
+  background-color: #f9f9f9;
+  padding: 9%;
+}
+.work01-04-site-detail h3{
+  font-weight: 600;
+  margin-bottom:10px ;
+}
+.work01-04-site-detail h4{
+  font-size: 14px;
+  font-weight: 600;
+  margin: 30px 0 5px 0;
+  padding: 0 0 0 15px;
+  position: relative;
+}
+.work01-04-site-detail h4::before{
+  content: '';
+  position: absolute;
+  left: 5px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 8px;
+  height: 8px;
+  background-color: #000;
+}
+
+
+.work01-04-site-detail li{
+  padding: 0 0 0 22px;
+  position: relative;
+}
+.work01-04-site-detail li::before{
+  content: '';
+  position: absolute;
+  left: 10px;
+  top: 10px;
+  transform: translateY(-50%);
+  width: 3px;
+  height: 3px;
+  border-radius: 50%;
+  background-color: #000;
+}
+
+.site-hovar-pic{
+  max-width: 500px;
+  margin: 20px;
+}
+.site-hovar-pic img{
+  width: 100%;
+  height: auto;
+}
+
+.site-popup-pic{
+  max-width: 500px;
+  margin: 20px;
+}
+.site-popup-pic img{
+  width: 100%;
+  height: auto;
+}
+
+
+
+/********** work03.html **********/
+.color-5{
+  background-color: #D7E6EA;
+}
+
+
+
+/********** work04.html **********/
+.color-6{
+  background-color: #cdad5a;
+}
+
+.Century-Gothic{
+  font-family: "century gothic";
+}
+
+.work04-site-area img{
+  width: 100%;
+  height: auto;
+  padding: 0 9% 9% 9%;
+}
+
+
+
+
+
+
+

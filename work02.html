@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Work/制作物 板谷うた様ポートフォリオサイト</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/destyle.css@1.0.15/destyle.css"/>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/responsive.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&display=swap"
+      rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&family=Zen+Old+Mincho:wght@400;500;600;700;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Antic+Didone&family=Noto+Sans+JP:wght@100..900&family=Zen+Old+Mincho:wght@400;500;600;700;900&display=swap" rel="stylesheet">
+ 
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  </head>
+
+  <body>
+    <!--..........header..........-->
+    <header>
+      <div class="header">
+        <div class="logo">
+          <a href="index.html">ASANO's portfolio</a>
+        </div>
+        <div class="header-navi">
+          <ul>
+            <li class="navi-work"><a href="index.html#Work">Work</a></li>
+            <li class="navi-about"><a href="about.html">About</a></li>
+            <li class="navi-contact"><a href="mailto:rena07seven@icloud.com?subject=お問い合わせ&body=お問い合わせ内容をご記入ください" >Contact</a></li>
+          </ul>
+        </div>
+      </div>
+    </header>
+    <!---------- hamburger menu ---------->
+    <div class="hamburger-menu">
+      <input type="checkbox" id="menu-btn-check">
+      <label for="menu-btn-check" class="menu-btn"><span></span></label>
+      <!--ここからメニュー-->
+      <div class="menu-content" id="menu-content">
+        <ul>
+          <li class="navi-work"><a href="index.html#Work">Work</a></li>
+          <li class="navi-about"><a href="about.html">About</a></li>
+          <li class="navi-contact"><a href="mailto:rena07seven@icloud.com?subject=お問い合わせ" >Contact</a></li>
+        </ul>
+      </div>
+      <!--ここまでメニュー-->
+    </div>
+
+  <script>
+    $('#menu-content a[href]').on('click', function(event) {
+    // メニューを閉じる
+    $('#menu-btn-check').prop('checked', false);
+    });
+  </script>
+
+    <!--..........Work..........-->
+    <section class="work-page">
+        <div class="work01-04-title">
+          <h2>板谷 うた様　ポートフォリオサイト</h2>
+          <p>Type　Website</p>
+          <p>Client　アーティスト 板谷 うた様</p>
+        </div>
+        <div class="work01-04-thumbnail">
+          <img src="img/itayauta Portfolio.jpg" alt="板谷 うた様ポートフォリオサイトサムネイル画像" width="1140" height="641">
+        </div>
+        <p class="work01-04-summary">
+          アーティスト 板谷 うた様 のポートフォリオサイトを制作しました。このサイトでは、作品を引き立てるために、シンプルで洗練されたデザインを採用しました。 <br>希望されていた、現代・モダンのイメージを醸し出すため、文字サイズは大きすぎず、余白を多めに取り入れたフラットデザインのサイトで作品に焦点を当てるレイアウトに。また、作品はギャラリーのように配置することで訪問者が心地よくアートを楽しめるよう配慮しました。シンプルながらも魅力的なビジュアルを通じて、アーティストの独自性を表現しています。
+        </p>
+        <div class="work01-04-textarea">
+          <div class="work01-04-text0102">
+            <div class="work01-04-text01">
+              <h3>制作背景</h3>
+                <h4>Purpose<span class="work01-04-h4-sub">サイトの目的</span></h4>
+                <ul>
+                  <li>展示依頼等を受け付けるお問い合わせ用</li>
+                  <li>自己表現</li>
+                  <li>作品の販売促進</li>
+                </ul>
+                <div class="work-line"></div>
+                <h4>Target<span class="work01-04-h4-sub">ターゲット顧客</span></h4>
+                <ul>
+                  <li>ギャラリーやキュレーター（展示依頼）</li>
+                  <li>アートに興味があるアートファンやコレクター</li>
+                </ul>
+                <div class="work-line"></div>
+                <h4>5W1H Summary<span class="work01-04-h4-sub">サイトの5W1H</span></h4>
+                <ul>
+                  <li>What: 展示依頼などのお問い合わせ用</li>
+                  <li>Who: ギャラリーやキュレーター、アートファン</li>
+                  <li>Why: 作品のスタイルやアーティストの情報収集、作品購入検討</li>
+                  <li>When: 展示やイベントの前後、購入検討時</li>
+                  <li>Where: 自宅やカフェ、電車など、スマホやPCからアクセス可能</li>
+                  <li>How: SNS（Instagram・X・Facebook）、名刺裏QRコード</li>
+                </ul>
+            </div>
+            <div class="work01-04-text02">
+              <h3>デザインコンセプト</h3>
+                <h4>Concept<span class="work01-04-h4-sub">コンセプト</span></h4>
+                <ul>
+                  <li>シンプルで洗練されたデザインが、作品の魅力を引き立てるサイトに</li>
+                </ul>
+                <div class="work-line"></div>
+                <h4>Color<span class="work01-04-h4-sub">カラー</span></h4>
+                <ul>
+                  <li>#FFFFFF<span class="square color-3"></span></li>
+                  <li>#000000<span class="square color-4"></span></li>
+                </ul>
+                <div class="work-line"></div>
+                <h4>Font<span class="work01-04-h4-sub">フォント</span></h4>
+                <ul>
+                  <li class="Noto-Sans-JP">Noto Sans JP</li>
+                </ul>
+            </div>
+          </div>
+          <div class="work01-04-text030405">
+            <div class="work01-04-text0304">
+              <div class="work01-04-text03">
+                <h3>使用ツール</h3>
+                <h4>Web Design<span class="work01-04-h4-sub">ウェブデザイン</span></h4>
+                <ul><li>Figma</li></ul>
+              </div>
+              <h3>制作範囲</h3>
+              <ul>
+                <li>Direction</li>
+                <li>Web Design</li>
+                <li>coding</li>
+              </ul>
+            </div>
+            <div class="work01-04-text05">
+              <h3>制作期間</h3>
+               <h4>Direction<span class="work01-04-h4-sub">企画</span></h4>
+               <ul><li>7日間</li></ul>
+               <div class="work-line"></div>
+               <h4>Web Design<span class="work01-04-h4-sub">ウェブデザイン</span></h4>
+               <ul><li>7日間</li></ul>
+               <div class="work-line"></div>
+               <h4>Coding<span class="work01-04-h4-sub">コーディング</span></h4>
+               <ul><li>14日間</li></ul>
+            </div>
+          </div>
+          <div class="site-text-link">
+            <a href="https://rena07a.github.io/i-portfolio/" target="_blank">
+              サイトを見る<span><img src="img/link-out.png" alt="外部リンクアイコン" width="20" height="20"></span>
+            </a>
+          </div>
+          <p class="site-text-link-sub">※公開前のためデモサイトの表示になります</p>
+        </div>
+      </section> 
+
+      <section class="work-page-pic">
+        <div class="work01-04-site-area">
+          <div class="work01-04-site-pc">
+            <img src="img/itayauta-portfolio-pc.png" alt="板谷うたポートフォリオサイトPCデザイン" width="688" height="4481">
+          </div>
+          <div class="work01-04-site-sp">
+            <img src="img/itayauta-portfolio-sp.png" alt="板谷うたポートフォリオサイトSPデザイン" width="197" height="4479">
+          </div>
+        </div>
+        <div class="site-text-link">
+          <a href="https://rena07a.github.io/i-portfolio/" target="_blank">
+            サイトを見る<span><img src="img/link-out.png" alt="外部リンクアイコン" width="20" height="20"></span>
+          </a>
+        </div>
+        <p class="site-text-link-sub">※公開前のためデモサイトの表示になります</p>
+
+        <div class="work01-04-site-detail">
+          <h3>デザイン詳細</h3>
+          <h4>サイト全体</h4>
+          <p>サイトの目的達成とコンセプトの作品の魅力を引き立てるサイトにするために以下を意識してデザインしました。</p>
+          <ul>
+            <li>余白を多く取り、情報を整理して見やすくするシンプルなデザインと構成。</li>
+            <li>使用カラーは白黒のみで作品の邪魔をしないように。</li>
+            <li>フォントはNoto Sans JPを使用し、シンプルなデザインとクリーンなラインで、現代的な印象を。また、読みやすい点も考慮して採用。</li>
+            <li>セクションごとに少しデザイン性のあるlineを設置することでメリハリを。</li>
+          </ul>
+
+          <h4>ヘッダー</h4>
+          <ul>
+            <li>スマホ版ではハンバーガーメニューを使用してすっきりしたビジュアルに。</li>
+            <li>ナビゲーション内の「shop」のメニューは外部リンクのためわかりやすいようにアイコンを使用。</li>
+            <li>Instagramを注力的に運用されているとのことだったので、わかりやすい場所にInstagramアイコンを設置。</li>
+          </ul>
+
+          <h4>gallery</h4>
+          <ul>
+            <li>規則的に作品を並べ、鑑賞しやすいように。また、ユーザーが退屈しないように規則的ではない表示も挟んだ。</li>
+            <li>ホバー時はわかりやすいように画像を暗くさせ、作品名を左下に表示させるデザインにした。</li>
+          </ul>
+          <div class="site-hovar-pic">
+            <img src="img/pic-hovar.png" alt="画像ホバー時" width="500" height="219">
+          </div>
+          
+          <h4>gallery popup</h4>
+          <ul>
+            <li>作品の画像クリック時には「作品」「作品名」「購入サイトへのリンクボタン」をポップアップにて表示させるようにした。作品の詳細が気になる人や購入したい人がスムーズに購入サイトに遷移できる同線にした。</li>
+          </ul>
+          <div class="site-popup-pic">
+            <img src="img/popup.png" alt="画像ポップアップ時" width="500" height="289">
+          </div>
+
+          <h4>about / exhibition</h4>
+          <ul>
+            <li>板谷様の作品のイメージと合うようにアイコンは円にて表示。</li>
+            <li>文字サイズは大きすぎず、余白を多く取り、シンプルなデザイン性のある構成にした。</li>
+          </ul>
+
+          <h4 >Contact</h4>
+          <ul>
+            <li>ユーザーが直感的に入力できるように、シンプルなデザインにした。また、余白とシンプルな線のみのフラットデザインで現代的なスタイルにした。</li>
+            <li>本番環境ではWordpress プラグインにて実装予定。</li>
+          </ul>
+
+
+        </div>
+        <div class="center">
+          <div class="pagination">
+          <a href="work01.html">&laquo;</a>
+          <a href="work01.html">1</a>
+          <a href="work02.html"class="active">2</a>
+          <a href="work03.html">3</a>
+          <a href="work04.html">4</a>
+          <a href="work03.html">&raquo;</a>
+          </div>
+        </div>
+      </section>
+    
+    
+    <!--..........footer..........-->
+    <footer>
+      <div class="footer">
+        <div class="footer logo">
+          <a href="index.html">ASANO's portfolio</a>
+        </div>
+        <div class="footer-navi">
+          <ul>
+            <li><a href= "index.html#Work">Work</a></li>
+            <li><a href="about.html">About</a></li>
+            <li class="line"></li>
+            <li><a href="mailto:rena07seven@icloud.com?subject=お問い合わせ&body=お問い合わせ内容をご記入ください">Contact</a></li>
+          </ul>
+        </div>
+        <p class="copyright">© 2024 Rena Asano.</p>
+      </div>
+    </footer>
+  </body>
+</html>
